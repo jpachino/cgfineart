@@ -1,0 +1,65 @@
+
+ 
+
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Signika Negative', sans-serif; 
+  body,h2,h3,h4,h5,h6 {font-family: 'Playfair Display', serif;}
+  body, html {
+  height: 150%;
+  color: black;
+  line-height: 1.8;}
+  h1 {
+    font-family:"Poiret One", cursive;
+    text-align:center;
+  }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("./images/Logo1.jpg");
+  min-height: 100%;
+}
+
+/* Second image (Artwork) 
+.bgimg-2 {
+  background-image: url("./images/Chayalogo.jpg");
+  min-height: 400px;
+}*/
+
+/* Third image (Contact) 
+.bgimg-3 {
+  background-image: url("./images/Chayalogo.jpg");
+  min-height: 400px;
+}*/
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+    
+  }
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+  /* Custom style to prevent carousel from being distorted 
+     if for some reason image doesn't load */
+  .carousel-item{
+    align-items:center;
+    max-width: 100%;
+      max-height: 400px;
+  }
